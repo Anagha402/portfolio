@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding:0;
+    /* margin and padding are given to keep navbar at top */
+    box-sizing: border-box;
+    /* border: border-box; */
+    /* either of the above can be used */
+    /* box sizing is used to get the width in complete page ie to completely fit the image inside border*/
+    font-family: "Roboto", sans-serif;
+}
+
+nav{
+    background-color: transparent;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    /* flex will not be applied in this section as elements are present in ul li a BUT justify content will be reflected here */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* z index is for preventing sticky navbar fromoverlapping with the content */
+    /* 1 or -1 can be used as zindex values */
+}
+nav ul{display: flex;
+    /* flex will be reflected here */
+}
+/* for editing the elements */
+nav ul li a{
+    margin: 5px;
+    color: brown;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    text-shadow: 2px 4px 6px black;
+    /* three values are given to make it 3d */
+    text-decoration: underline;
+}
+
+video{
+    width:100%;
+    height: 600px;
+    object-fit: cover;
+    /* object fit cover or contain can be used to fit image to the screen */
+}
+/* heading editing */
+.overlay{
+    /* absolute is used to make the text appear over the video */
+    position: absolute;
+    top: 50%;
+    left: 60%;
+}
+
+h1{
+    color: rgb(234, 227, 227);
+}
+h1:hover{
+    color: aqua;
+    text-shadow: 2px 4px 6px rgb(7, 7, 200);
+}
+
+/* home */
+span{
+    color: blueviolet;
+    font-size: 50px;
+}
+#home{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+/* taking image using before selector.There is actually no need to use this selector.Just shown for knowledge */
+#home::before{
+    content: "iam jhon";
+    background-image: url(https://www.maynardnexsen.com/assets/images-t1682371154/18613.jpeg);
+    height: 100%;
+    background-size: cover;
+    
+}
+.main{
+    border: 3px inset blueviolet;
+    padding: 5px;
+    display: flex;
+    position: absolute;
+    height: 90px;
+    left: 45%;
+    margin-top: 25%;
+    box-shadow: 2px 4px 6px black;
+
+}
+.main:hover{
+    scale:1.05;
+    /* by using scale the image will incrase its size when we put cursor over it */
+}
+
+
+/* about */
+h3{
+    background-color: bisque;
+    color: brown;
+    font-style: italic;
+    text-align: center;
+}
+.pic{
+    display: flex;
+}
+.pic img{
+    width: 400px;
+}
+.pic img:hover{
+    filter: drop-shadow(3px 3px 20px blueviolet);
+}
+.pic h4{
+    color: blueviolet;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.pic p{
+    text-align: justify;
+    margin: 10px;
+}
+.gallery{
+    
+    box-shadow: 2px 4px 6px blueviolet;
+    margin: 20px;
+    /* margin should be applied for box shadow to become visible */
+}
+.gallery img{
+    width: 400px;
+    margin: 5px;
+    margin-left: 40px;
+    padding: 5px;
+}
+.gallery img:hover{
+    scale:1.06;
+}
+
+/* services */
+.row{
+    display: flex;
+    margin-top: 5px;
+}
+.box{
+    width: 400px;
+    height: 760px;
+    border: 3px ridge blueviolet;
+    margin: 5px;  
+    align-items: center;
+    background: linear-gradient(to top,rgb(218, 211, 211)50%,rgb(240, 74, 179)50%);
+    /* linear gradient is used for combination of two colors or dual color tone. */
+    /* if 50%is given before both colors.Half will be first color and second half will be next color */
+    /* the second color will move to top when hovored */
+    background-size: 100% 200%;
+    /* IF BACKGROUND SIZE IS specified only first color will be shown initially */
+    transition: all 1.05s;
+    /* ms or s can be used for transition speed setting */
+}
+
+.box:hover{
+    background-position:bottom;
+    /* bottom or left bottom or right bottom can be given .Same effect for all.Just given for the color to appear till bottom */
+    filter: drop-shadow(3px 3px 20px blueviolet);
+    /* drop shadow is an effect used to give around image or content */
+}
+.box img{
+    width: 350px;
+    padding: 10px;
+}
+.box p{
+    text-align: justify;
+    padding: 5px;
+}
+.box h5{
+    font-size: 30px;
+    text-align: center;
+    color: cornflowerblue;
+    text-shadow: 2px 3px 4px black;
+}
+
+/* connect */
+form{
+    width: 500px;
+    margin-left: 500px;
+    text-align: center;
+}
+input{
+    width: 100%;
+    margin: 10px;
+
+}
+
+button{
+    color: aquamarine;
+    background-color: black;
+    cursor: pointer;
+    /* used to change cursor from arrow to hand */
+    padding: 5px;
+    width: 100%;
+}
+
+/* hire me button */
+.cv{
+    background-color: cadetblue;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 50%;
+    border-radius: 20%;
+    
+}
+/* footer */
+.footer{
+    background-color: rgb(191, 158, 158);
+    display: flex;
+    justify-content: center;
+    
+    font-size: 40px;
+    height: 400px;
+    color: rgb(48, 5, 88);
+    
+}
+.fa-brands{
+    margin-top: 20px;
+}

@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(46, 10, 119);
+    height: 80px;
+}
+nav ul{
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+nav ul li a{
+    margin: 5px;
+    /* margin=5px puts space between home ,about etc */
+    font-size: 20px;
+    color: rgb(241, 241, 246);
+    text-decoration: none;
+}
+/* home */
+span{
+    color: blueviolet;
+    font-size: 50px;
+    justify-content: center;
+}
+#home{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+}
+
+.main{
+    border: 3px inset blueviolet;
+    padding: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 130px;
+    width: 400px;
+    left: 45%;
+    bottom: 50%;
+    margin-top: 25%;
+    box-shadow: 4px 4px 6px black;
+
+}
+.main:hover{
+    scale:1.05;
+    filter: drop-shadow(10px 10px 10px blueviolet);
+    /* by using scale the image will incrase its size when we put cursor over it */
+}
+#home img{
+    
+    
+    border: 3px solid;
+    border-radius: 50%;
+}
+#home img:hover{
+    filter: drop-shadow(10px 10px 10px blue);
+}
+#hh3{
+    background: transparent;
+    
+}
+/* about */
+#about{
+    background-color: burlywood;
+}
+h3{
+    background-color: rgb(46, 10, 119);
+    text-align: center;
+    color: rgb(241, 241, 246);
+    height: 40px;
+    padding: 10px;
+}
+.rowabout{
+    display: flex;
+}
+.rowabout img{
+    height: 250px;
+    width:300px;
+    padding: 10px;
+    border-radius: 10%;
+    
+}
+.rowabout img:hover{
+    filter: drop-shadow(3px 3px 3px blue);
+}
+.para{
+    padding: 35px;
+    font-size: 20px;
+}
+
+/* career */
+.row{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: burlywood;
+    height: 500px;
+    width: 100%;
+    
+}
+.col{
+    background-color: aqua;
+    height: 400px;
+    width: 1450px;
+    margin: 20px;
+    margin-left: 35px;
+}
+ 
+ 
+    
